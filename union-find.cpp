@@ -23,7 +23,7 @@ void unite(int x,int y){
     if(rank[x] < rank[y]){
         par[x]=y;
     }else{
-        par[x] = x;
+        par[y] = x;
         if(rank[x] == rank[y]) rank[x]++;
     }
 }
