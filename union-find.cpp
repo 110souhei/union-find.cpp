@@ -20,10 +20,10 @@ void unite(int x,int y){
     x = find(x);
     y =find(y) ;
     if(x == y) return ;
-    if(rank[x] < rank[y]){
+    if(rak[x] < rak[y]){
         par[x]=y;
     }else{
         par[y] = x;
-        if(rak[x] == rank[y]) rak[x]++;
+        if(rak[x] == rak[y]) rak[x]++;
     }
 }
